@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    background: hsl(204, 43%, 93%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    max-width: 700px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 8px 2px hsl(204, 43%, 83%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+
+.main-header{
+    background: #fff;
+    grid-column: 1 / 3;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.monthly__subscription{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border-bottom-left-radius: inherit;
+}
+
+.last-section{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-bottom-right-radius: inherit;
+}
+
+.container{
+    margin: 20px;
+    padding: 15px;
+}
+
+.pricing-header{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pricing-subheader{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    color: hsl(71, 73%, 54%);
+}
+
+.pricing-details{
+    margin-bottom: 20px;
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+}
+
+.monthly__subscription{
+    background: hsl(179, 62%, 43%); 
+}
+
+.last-section{
+    background :hsl(179, 62%, 45%)
+}
+
+
+.offers__heading{
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price__amount{
+color: #fff;
+font-size: 30px;
+font-weight: 700;
+}
+
+.price__per-month{
+    color: hsla(204, 43%, 93%, 0.7);
+
+}
+
+.offer__details {
+    color: hsla(204, 43%, 93%);
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.signup__button{
+    padding: 10px ;
+    width: 100%;
+    color: #fff;
+    background: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 6px;
+    border: none;
+}
+
+.signup__button:hover{
+    cursor: pointer;
+}
+
+.descriptions {
+    color: hsl(204, 43%, 93%);
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 550px) {
+    main {
+        max-width: 700px;
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 0px 0px 8px 2px hsl(204, 43%, 83%);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .main-header{
+        background: #fff;
+        grid-column: 1 ;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+    }
+    
+    .monthly__subscription{
+        grid-column: 1;
+        grid-row: 2;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .last-section{
+        grid-column: 1;
+        grid-row: 3;
+        border-bottom-right-radius: inherit;
+        border-bottom-left-radius: inherit;
+    }
+    
+}
